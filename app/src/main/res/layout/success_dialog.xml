@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/succesConstraintLayout"
+    android:layout_width="370dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutDialog"
+        android:background="@drawable/custom_bkg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/succeTitle"
+            android:text="Acerca de"
+            android:textColor="#ad832f"
+            android:textSize="20sp"
+            android:paddingTop="28dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@+id/layoutDialog" />
+
+        <TextView
+            android:id="@+id/seccesDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#1c2043"
+            android:gravity="center_horizontal"
+            android:text="Autor: Yojans Gabriel Marroquín Melendez"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/info"
+            app:layout_constraintTop_toBottomOf="@+id/succeTitle"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/curso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="Curso: Programación II"
+            android:textSize="18sp"
+            android:textColor="#1c2043"
+            app:layout_constraintBottom_toTopOf="@+id/info"
+            app:layout_constraintTop_toBottomOf="@+id/succeTitle"
+            app:layout_constraintVertical_bias="0.441"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/Seccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="Sección: A"
+            android:textSize="18sp"
+            android:textColor="#1c2043"
+            app:layout_constraintBottom_toTopOf="@+id/info"
+            app:layout_constraintTop_toBottomOf="@+id/succeTitle"
+            app:layout_constraintVertical_bias="0.896"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <Button
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/base_blue"
+            android:text="Aceptar"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/seccesDesc" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/icon"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="0dp"
+        android:src="@drawable/banco_solaris_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/layoutDialog"
+        app:layout_constraintBottom_toTopOf="@+id/layoutDialog"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosUsuario"
+    android:background="@color/base_blue">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Datos del Usuario"
+            android:textAlignment="center"
+            android:textColor="#ad832f"
+            android:textSize="34dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:boxStrokeColor="@color/base_blue"
+            app:boxStrokeErrorColor="@color/base_blue"
+            app:startIconDrawable="@drawable/ic_dpi"
+            app:startIconTint="#323c60">
+
+            <EditText
+                android:id="@+id/txtDPI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:hint="DPI"
+                android:inputType="number"
+                android:textColor="#1c2043"
+                android:textColorHint="#c4ad81" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:boxStrokeColor="@color/base_blue"
+            app:boxStrokeErrorColor="@color/base_blue"
+            app:startIconDrawable="@drawable/ic_person"
+            app:startIconTint="#323c60">
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:hint="Nombres"
+                android:inputType="text"
+                android:textColor="#1c2043"
+                android:textColorHint="#c4ad81" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:boxStrokeColor="@color/base_blue"
+            app:boxStrokeErrorColor="@color/base_blue"
+            app:startIconDrawable="@drawable/ic_person"
+            app:startIconTint="#323c60">
+
+            <EditText
+                android:id="@+id/txtApellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:hint="Apellidos"
+                android:inputType="text"
+                android:textColor="#1c2043"
+                android:textColorHint="#c4ad81" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:boxStrokeColor="@color/base_blue"
+            app:boxStrokeErrorColor="@color/base_blue"
+            app:startIconDrawable="@drawable/ic_edad"
+            app:startIconTint="#323c60">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Edad"
+                android:inputType="number"
+                android:textColor="#1c2043"
+                android:textColorHint="#c4ad81" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="Regresar"
+        android:text="Cancelar"
+        android:textColor="#c4ad81"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="Siguiente"
+        android:text="Siguiente"
+        android:textColor="#c4ad81"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="base_blue">#1c2043</color>
+    <color name="green">#03dac6</color>
+    <color name="custom_primary">#1c2043</color> <!-- Color principal -->
+    <color name="custom_secondary">#323c60</color> <!-- Color secundario -->
+    <color name="custom_accent">#ad832f</color> <!-- Color de acento -->
+    <color name="custom_background">#c4ad81</color> <!-- Color de fondo -->
+    <color name="custom_on_primary">#ffffff</color>
+</resources>

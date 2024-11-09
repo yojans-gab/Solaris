@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Solaris" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/custom_primary</item>
+        <item name="colorOnPrimary">@color/custom_on_primary</item>
+
+        <!-- Color de acento -->
+        <item name="colorSecondary">@color/custom_secondary</item>
+        <item name="colorOnSecondary">@color/custom_on_primary</item>
+
+        <!-- Fondo y texto sobre el fondo -->
+
+        <item name="colorOnBackground">@color/custom_primary</item>
+
+        <!-- Color del borde y el texto en los campos de texto -->
+        <item name="colorOutline">@color/custom_accent</item>
+        <item name="colorOnSurface">@color/custom_primary</item>
+    </style>
+
+
+    <style name="Theme.Solaris2" parent="Theme.AppCompat.Light.DarkActionBar" />
+</resources>

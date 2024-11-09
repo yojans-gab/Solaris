@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitymenu.depositoActivity"
+    android:background="@color/base_blue">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button3"
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:onClick="RegMenu"
+        app:backgroundTint="#323c60"
+        app:icon="@drawable/ic_back"
+        app:iconGravity="textTop"
+        app:iconPadding="-1dp"
+        app:iconSize="35dp"
+        app:iconTint="#ad832f"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#c4ad81"
+        app:strokeColor="#ad832f"
+        app:strokeWidth="1dp" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:background="@drawable/edit_redondo"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.267"
+        app:layout_constraintHorizontal_bias="0.5">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monto a Depositar"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp" />
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/dinero_quetzal"
+                app:tint="#ad832f" />
+
+            <EditText
+                android:id="@+id/tvdeposito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/icon"
+                android:layout_marginStart="8dp"
+                android:hint=" 0.00"
+                android:inputType="numberDecimal"
+                android:textColor="#323c60"
+                android:textAlignment="center"
+                android:textColorHint="#B1AFAF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:text="Depositar a mi cuenta"
+        android:textAlignment="center"
+        android:textColor="#ad832f"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="Depositar"
+        android:text="Depositar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#c4ad81"
+        app:strokeColor="#ad832f"
+        app:strokeWidth="1dp"
+        app:backgroundTint="#323c60"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu"
+    android:background="@color/base_blue">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="CerrarSecion"
+        app:backgroundTint="@color/base_blue"
+        app:icon="@drawable/ic_exit"
+        app:iconPadding="-4dp"
+        app:iconSize="37dp"
+        app:iconTint="#ad832f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#c4ad81"
+        app:strokeColor="#ad832f" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="356dp"
+        android:onClick="Consulta"
+        android:text="Consulta"
+        android:textSize="20sp"
+        app:backgroundTint="#323c60"
+        app:icon="@drawable/reporte"
+        app:iconGravity="textStart"
+        app:iconSize="25dp"
+        app:iconTint="#ad832f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#c4ad81"
+        app:strokeColor="#ad832f"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:onClick="Tranferencia"
+        android:text="Transferencia"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:rippleColor="#c4ad81"
+        app:strokeColor="#ad832f"
+        app:strokeWidth="1dp"
+        app:backgroundTint="#323c60"
+        app:icon="@drawable/transferencia_dinero"
+        app:iconGravity="textStart"
+        app:iconTint="#ad832f"
+        app:iconSize="25dp"/>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="52dp"
+        android:onClick="Depositos"
+        android:text="Deposito"
+        android:textSize="20sp"
+        app:backgroundTint="#323c60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        app:rippleColor="#c4ad81"
+        app:strokeColor="#ad832f"
+        app:strokeWidth="1dp"
+        app:icon="@drawable/dinero_quetzal"
+        app:iconGravity="textStart"
+        app:iconTint="#ad832f"
+        app:iconSize="25dp"/>
+
+    <TextView
+        android:id="@+id/tvmostrarcuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="No. Cuenta:"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="163dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/banco_solaris_logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

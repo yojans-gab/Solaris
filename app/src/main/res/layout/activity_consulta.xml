@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_blue"
+    tools:context=".activitymenu.consultaActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reporte"
+            android:textSize="25dp"
+            android:textColor="#ad832f"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="No. Cuenta:"
+            android:textColor="#c4ad81"
+            android:paddingRight="5dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvMostCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:paddingLeft="8dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Saldo:"
+            android:textColor="#c4ad81"
+            android:paddingRight="5dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvMostSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:paddingLeft="8dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_marginTop="-15dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="47dp"
+        android:background="#F5F5F5"
+        android:padding="8dp">
+
+        <TableLayout
+            android:id="@+id/data_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:divider="@drawable/table_divider"
+            android:showDividers="middle"
+            android:stretchColumns="*">
+
+
+        </TableLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#323c60"
+            android:onClick="RegMenu"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            app:backgroundTint="#323c60"
+            app:icon="@drawable/ic_back"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:rippleColor="#c4ad81"
+            app:strokeColor="#ad832f"
+            app:strokeWidth="1dp"
+            app:iconSize="28dp"
+            app:iconGravity="textTop"/>
+
+        <Button
+            android:id="@+id/btnImprimir"
+            android:layout_marginStart="16dp"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:backgroundTint="#323c60"
+            android:onClick="Imprimir"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            app:icon="@drawable/ic_descarga"
+            app:iconGravity="textTop"
+            android:textStyle="bold"
+            app:rippleColor="#c4ad81"
+            app:strokeColor="#ad832f"
+            app:strokeWidth="1dp"
+            app:iconSize="28dp" />
+
+        <Button
+            android:id="@+id/btnNuevo"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#323c60"
+            android:onClick="compartirPDF"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:rippleColor="#c4ad81"
+            app:strokeColor="#ad832f"
+            app:strokeWidth="1dp"
+            app:icon="@drawable/baseline_share_24"
+            app:iconGravity="textTop"
+            app:iconSize="28dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
